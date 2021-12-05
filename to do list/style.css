@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+body {
+  background-color: rgb(212, 236, 228);
+}
+.centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin: auto;
+  justify-content: center;
+  min-height: 50vh;
+  width: 80vw;
+  margin-top: 10vh;
+}
+.todo-heading {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(46, 95, 95);
+  margin-bottom: 5vh;
+}
+form {
+  /* border: 1px solid black; */
+  width: 100%;
+}
+#todo-input {
+  height: 2rem;
+  width: 80%;
+  border: 3px solid #555;
+}
+
+#add-btn {
+  height: 2rem;
+  color: white;
+  background-color: rgb(11, 12, 12);
+  width: 10vw;
+  border: none;
+}
+#add-btn:hover {
+  background-color: green;
+}
+
+.list-container {
+  display: flex;
+  /* margin-top: 5vh; */
+  /* border: 2px solid red; */
+  /* min-height: 5vh;
+  width: 100%; */
+  justify-content: center;
+  align-items: center;
+}
+.list-item {
+  list-style: none;
+}
+.todo-items {
+  margin-top: 2vh;
+  background-color: white;
+  margin-bottom: 2vh;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.todo-list-li {
+  flex: 1;
+  width: 80%;
+  padding: 0px 10px 0px 10px;
+  display: inline-block;
+}
+.checkBtn {
+  background-color: lightgreen;
+  color: rgb(5, 5, 5);
+  padding: 1rem;
+  border: none;
+}
+.trashBtn {
+  padding: 1rem;
+  columns: white;
+  background-color: rgb(231, 147, 147);
+  border: none;
+}
+.checkBtn:hover {
+  background-color: darkgreen;
+}
+.trashBtn:hover {
+  background-color: darkred;
+}
+.fa-check,
+.fa-trash-alt {
+  pointer-events: none;
+}
+
+.checkedItem {
+  opacity: 0.4;
+  text-decoration: overline;
+}

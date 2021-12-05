@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  min-height: 60vh;
+  width: 50vw;
+  background-color: rgb(33 32 32);
+  display: flex;
+  border: 3px solid rgb(14, 13, 12);
+  border-radius: 5px;
+  margin: 10vh auto 10vh auto;
+  flex-direction: column;
+}
+
+.container input {
+  background: none;
+  background-color: grey;
+  border: none;
+  border-bottom: 2px solid #111;
+  box-shadow: none;
+  width: 100%;
+
+  padding: 20px;
+  text-align: right;
+  font-size: 40px;
+}
+.all-buttons {
+  padding: 20px;
+  display: grid;
+  width: 100%;
+  /* border: 3px solid rgb(50, 20, 224); */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.cal-button {
+  background: rgb(236, 215, 215);
+  border: 1px solid #111;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 1.3rem;
+}
+.cal-button:hover {
+  background-color: lightcyan;
+}
+.c-clear {
+  grid-column: span 3;
+}
+.equal {
+  grid-column: 4/4;
+  background: #8c8086;
+}
+.zero {
+  grid-column: span 3;
+}

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0px; */
+}
+.container {
+  margin: 20vh auto 10vh;
+  width: 50vw;
+  height: 60vh;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+.container h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: rgb(136, 209, 209);
+}
+#num {
+  font-size: 4rem;
+}
+.btn-container button {
+  margin-left: 10px;
+  font-size: 1rem;
+  padding: 3px 26px;
+  border-radius: 5px;
+  border-color: rgb(0, 0, 0);
+}
+.container button:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <h1>Counter</h1>
+
+            <span id="num">0</span>
+            <div class="btn-container">
+                <button class="btn-decrease " value="minus ">Decrease</button>
+                <button class="btn-reset" value="zero">Reset</button>
+                <button class="btn-increase" value="plus">Increase</button>
+            </div>
+        </div>
+    </main>
+    <script>
+       var  currNum = 0;
+     
+        btns = document.getElementsByClassName('btn-container');
+        for (item of btns) {
+            item.addEventListener('click',function(event){
+                 let buttonVal =  event.target.value;
+                 if(buttonVal == 'plus'){
+                     currNum++;
+                document.getElementById('num').textContent = currNum;
+                 }
+                 else if(buttonVal == 'zero'){
+                     currNum = 0;
+                     document.getElementById('num').textContent = currNum;
+                 }
+                 else{
+                     currNum--;
+                     document.getElementById('num').textContent = currNum;
+                 }
+
+
+                 if(currNum>0){
+            document.getElementById('num').style.color =" green";
+        }
+        else if(currNum == 0){
+            document.getElementById('num').style.color = "black";
+        }
+        else {
+            document.getElementById('num').style.color = "red";
+        }
+            })
+        }
+
+       
+    </script>
+</body>
+</html>
